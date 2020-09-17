@@ -14,7 +14,7 @@ function shuffle(str) {
 
   let currentStr = str
   let word = str.split("");
-  
+
   cheker()
 
   for (let i = 0; i < word.length; i++) {
@@ -39,7 +39,7 @@ function shuffle(str) {
         arr.push(lis[i].textContent)
     }
     let tstWord = arr.join('')
-    if (tstWord == currentStr){
+    if (tstWord == str){
         document.getElementById('items').classList.add('complete')   
     } else{
         document.getElementById('items').classList.remove('complete')
