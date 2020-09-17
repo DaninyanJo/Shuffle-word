@@ -11,12 +11,8 @@ shuffleBtn.addEventListener("click", () => {
 });
 
 function shuffle(str) {
-
-  let currentStr = str
-  let word = str.split("");
-
   cheker()
-
+  let word = str.split("");
   for (let i = 0; i < word.length; i++) {
     let currentValue = word[i];
     let randomIndex = Math.floor(Math.random() * word.length);
