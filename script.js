@@ -25,7 +25,7 @@ function shuffle(str) {
       const li = document.createElement("li");
       li.innerText = element;
       output.appendChild(li);
-      li.addEventListener('mouseout', () => cheker())
+      li.addEventListener('drag', () => cheker())
     });
   })()
   function cheker() {
