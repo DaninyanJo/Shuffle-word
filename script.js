@@ -25,7 +25,7 @@ function shuffle(str) {
       const li = document.createElement("li");
       li.innerText = element;
       output.appendChild(li);
-      li.addEventListener('drag', () => cheker())
+      // li.addEventListener('drop', () => cheker())
     });
   })()
   function cheker() {
@@ -41,11 +41,7 @@ function shuffle(str) {
         document.getElementById('items').classList.remove('complete')
     }
   }
-  cheker()
   
-  
-
-
+  setInterval(()=>cheker(),1000)
 }
-
 
