@@ -11,6 +11,7 @@ shuffleBtn.addEventListener("click", () => {
 });
 
 function shuffle(str) {
+  str = str.toUpperCase()
   cheker()
   let word = str.split("");
   for (let i = 0; i < word.length; i++) {
