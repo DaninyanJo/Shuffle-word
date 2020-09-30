@@ -1,28 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shuffle word</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Shuffle word</h1>
+    <div class="navbar">
       <div>
-        <input  id="shuffleInput" type="text" minlength="3" maxlength="15"  />
-        <button id="shuffleBtn">Shuffle</button>
+        <h1>Shufflord</h1>
+        <nav>
+          <div class="nav-item"><a href="">GAME</a></div>
+          <div class="nav-item"><a href="">stat</a></div>
+        </nav>
       </div>
-    </header>
-    <main>
-        
-        <ul id="items">
-          
-        </ul>
-
-
-        <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-        <script src="./script.js"></script>
-    </main>
+      <div>
+        <button class="button">Profile</button>
+        <button class="button">Log Out</button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="game-mode">
+        <dir class="game-mode_card">
+          <div class="gamemode-card_info"></div>
+          <span>Сlassic</span>
+        </dir>
+        <dir class="game-mode_card">
+          <div class="gamemode-card_info"></div>
+          <span>Time game</span>
+        </dir>
+        <dir class="game-mode_card">
+          <div class="gamemode-card_info"></div>
+          <span>Сlassic</span>
+        </dir>
+        <dir class="game-mode_card">
+          <div class="gamemode-card_info"></div>
+          <span>Time game</span>
+        </dir>
+      </div>
+    </div>
+    <!-- <script src="./js/main.js" type="module"></script> -->
   </body>
 </html>
