@@ -27,6 +27,7 @@ input{
 h1 {
   font-family: "Roboto", sans-serif;
 }
+
 .button {
   margin: 0;
   border: none;
@@ -39,7 +40,27 @@ h1 {
   cursor: pointer;
   &:hover {
     filter: brightness(0.88) drop-shadow(3px 4px 2px #00000020);
+    
+      background: rgb(71, 255, 80);
+
   }
+}
+.doubleButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  button{
+    width: 100%;
+    &:nth-child(1){
+      border-radius: 20px 0 0 20px ;
+    }
+    &:nth-child(2){
+      border-radius: 0 20px 20px 0 ;
+    }
+  }
+  
 }
 // * ---
 
@@ -80,12 +101,6 @@ body {
       padding: .3em;
       margin-bottom: 1rem;
       font-size: 24px;
-    }
-    button{
-      border-radius: 25px;
-      &:hover{
-        background: rgb(71, 255, 80);
-      }
     }
   }
 }
@@ -208,10 +223,6 @@ body {
 
   }
 }
-
-
-
-
 @keyframes colorize {
   0%{
     filter: border hue-rotate(0deg);

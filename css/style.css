@@ -42,6 +42,35 @@ h1 {
 .button:hover {
   -webkit-filter: brightness(0.88) drop-shadow(3px 4px 2px #00000020);
           filter: brightness(0.88) drop-shadow(3px 4px 2px #00000020);
+  background: #47ff50;
+}
+
+.doubleButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.doubleButton button {
+  width: 100%;
+}
+
+.doubleButton button:nth-child(1) {
+  border-radius: 20px 0 0 20px;
+}
+
+.doubleButton button:nth-child(2) {
+  border-radius: 0 20px 20px 0;
 }
 
 body {
@@ -101,14 +130,6 @@ body {
   padding: .3em;
   margin-bottom: 1rem;
   font-size: 24px;
-}
-
-#auth #auth-login button {
-  border-radius: 25px;
-}
-
-#auth #auth-login button:hover {
-  background: #47ff50;
 }
 
 .navbar {
