@@ -16,6 +16,13 @@ li {
   list-style: none;
 }
 
+input {
+  background: rgba(255, 255, 255, 0.877);
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 h1 {
   font-family: "Roboto", sans-serif;
 }
@@ -38,6 +45,7 @@ h1 {
 }
 
 body {
+  position: relative;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   line-height: 1.5;
   display: -webkit-box;
@@ -51,6 +59,56 @@ body {
   min-height: 100vh;
   background-color: #131417;
   color: #eeeeee;
+}
+
+#auth {
+  z-index: 100000;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#auth.isLogin {
+  display: none;
+}
+
+#auth #auth-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#auth #auth-login input {
+  padding: .3em;
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+#auth #auth-login button {
+  border-radius: 25px;
+}
+
+#auth #auth-login button:hover {
+  background: #47ff50;
 }
 
 .navbar {
