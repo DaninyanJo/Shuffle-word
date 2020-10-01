@@ -3,7 +3,6 @@ class Auth {
     constructor(){
         this.isStorageNull()
         this.isLogin()
-        this.user = this.user
     }
     isStorageNull(){
         console.log("Pusto");
